@@ -139,22 +139,24 @@ float superpoder, superpoder2;
 
   //     ==== Resultado da comparação ====
 
-  printf("--- Resultado ---\n");
+   printf("===== RESULTADO =====\n");
 
-  printf("Dica: \n");
-  printf("1 = Verdadeiro\n 0 = Falso\n");
+      printf("A carta que possuir a maior população vence !\n");
 
-  printf("A carta número 1 tem uma População maior do que a carta número 2 ?: %u\n  ", populacao > populacao2);
+      printf("A carta numero 1 tem uma população de %lu,Já a carta numero 2 tem uma população de %lu, então....\n", populacao, populacao2);
 
-  printf("A carta número 1 tem uma Area maior do que a carta número 2 ?: %d\n  ", area > area2);
+    // comparação if - if else
 
-  printf("A carta número 1 tem um PIB maior do que a carta número 2 ?: %d\n  ", pib > pib2);
+    if (populacao > populacao2)
+    {
+      printf(" A Carta 1 Venceu !\n");
+    }
+    else
+    {
+      printf("A Carta 2 Venceu !\n");
+    }
+    
 
-  printf("A carta número 1 tem mais Pontos Turísticos do que a carta número 2 ?: %d\n  ", pontosturisticos > pontosturisticos2);
-
-  printf("A carta número 1 tem uma Densidade Populacional maior do que a carta número 2 ?: %d\n  ", densidade > densidade2);
-
-  printf("A carta número 1 tem um PIB per Capita maior do que a carta número 2 ?: %d\n  ", ppc > ppc2);
-
+  
   return 0;
 }

@@ -15,6 +15,7 @@ int pontosturisticos, pontosturisticos2;
 float ppc, ppc2;
 float densidade, densidade2;
 float superpoder, superpoder2;
+int escolhajogador;
 
   //     ===== Entrada de dados carta 1 =====
 

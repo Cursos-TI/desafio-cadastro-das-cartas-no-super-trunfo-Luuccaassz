@@ -137,24 +137,87 @@ float superpoder, superpoder2;
        // segunda carta
    superpoder = (float)populacao2 + area2 + pib2 + pontosturisticos2 + ppc2 + (1 / densidade2);
 
-  //     ==== Resultado da comparação ====
+  //     ==== menu escolha para o switch====
 
-   printf("===== RESULTADO =====\n");
+        printf("===== Escolha um atributos para a comparação ====\n");
+            printf("1. População \n");
+            printf("2. Área \n");
+            printf("3. PIB \n");
+            printf("4. Número de pontos turísticos \n");
+            printf("5. Densidade demográfica \n\n");
+            scanf("%d", &escolhajogador);
+            
+      
 
-      printf("A carta que possuir a maior população vence !\n");
 
-      printf("A carta numero 1 tem uma população de %lu,Já a carta numero 2 tem uma população de %lu, então....\n", populacao, populacao2);
+  //     ==== Resultado da comparação/ Logica switch ====
 
-    // comparação if - if else
-
-    if (populacao > populacao2)
-    {
-      printf(" A Carta 1 Venceu !\n");
-    }
-    else
-    {
-      printf("A Carta 2 Venceu !\n");
-    }
+       switch (escolhajogador)
+       {
+       case 1:
+        if (populacao == populacao2)
+        {
+          printf("=== Empate ===");
+        } else if ((populacao > populacao2) || (populacao < populacao2))
+        {
+          printf("=== Carta 1 ganhou ! ===\n");
+        } else
+        {
+          printf("=== Carta 2 ganhou ! ===\n");
+        }
+        break;
+       case 2:
+        if (area == area2)
+        {
+          printf("=== Empate ===");
+        } else if ((area > area2) || (area < area2))
+        {
+          printf("=== Carta 1 ganhou ! ===\n");
+        } else
+        {
+          printf("=== Carta 2 ganhou ! ===\n");
+        }
+        break;
+        case 3:
+        if (pib == pib2)
+        {
+          printf("=== Empate ===");
+        } else if ((pib > pib2) || (pib < pib2))
+        {
+          printf("=== Carta 1 ganhou ! ===\n");
+        } else
+        {
+          printf("=== Carta 2 ganhou ! ===\n");
+        }
+        break;
+        case 4:
+        if (pontosturisticos == pontosturisticos2)
+        {
+          printf("=== Empate ===");
+        } else if ((pontosturisticos > pontosturisticos2) || (pontosturisticos < pontosturisticos2))
+        {
+          printf("=== Carta 1 ganhou ! ===\n");
+        } else
+        {
+          printf("=== Carta 2 ganhou ! ===\n");
+        }
+        break;
+        case 5:
+        if (densidade == densidade2)
+        {
+          printf("=== Empate ===");
+        } else if ((densidade > densidade2) || (densidade < densidade2))
+        {
+          printf("=== Carta 1 ganhou ! ===\n");
+        } else
+        {
+          printf("=== Carta 2 ganhou ! ===\n");
+        }
+        break;
+       default:
+         printf("Opção Invalida");
+        break;
+       }
     
 
   
